@@ -5,23 +5,49 @@ In order to test my implementation please go in the raft folder and run "go test
 
 Test: initial election ...
   ... Passed
+  
 Test: election after network failure ...
   ... Passed
+
 Test: basic agreement ...
   ... Passed
+
 Test: agreement despite follower failure ...
   ... Passed
+
 Test: no agreement if too many followers fail ...
   ... Passed
+
 Test: concurrent Start()s ...
   ... Passed
+
 Test: rejoin of partitioned leader ...
   ... Passed
+
 Test: leader backs up quickly over incorrect follower logs ...
   ... Passed 
-  And many more
+
+Test: basic persistence ...
+ ... Passed
+
+Test: TestPersist1...
+ ... Passed
+
+Test: TestPersist2...
+ ... Passed
+ 
+ Test: TestPersist3...
+ ... Passed
+ 
+ Test: Figure 8 ...
+  ... Passed
+   
+ 
+ 
+ 
   
-  Please note, there are race conditions within my implementation. That I yet need to solve. This was my first ever project in Golang. I tried my best to follow 
-  all the best practises. In case If i am missing somethings I would love to know about them.
+  Please note, there are some race conditions within my implementation. That I yet need to solve. If you run all tests togther you might stuck at basic persistent tests and this is happening becasue of race conditions, you can check race conditions by executing this command "go test --race"
+  
+  This was my first ever project in Golang. I tried my best to follow all the best practises. In case If i am missing somethings I would love to know about them.
   
   
