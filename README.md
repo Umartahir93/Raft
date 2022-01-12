@@ -46,7 +46,7 @@ Test: TestPersist2...
  
  
   
-  Please note, there are some race conditions within my implementation. That I yet need to solve. If you run all tests togther you might stuck at basic persistent tests and this is happening becasue of race conditions, you can check race conditions by executing this command "go test --race"
+  Please note, there are some race conditions within my implementation. And It sometimes gets stuck in deadlock condition. I am yet need to solve these problems. If you run all tests togther you sometime might stuck at basic persistent tests, you can check race conditions by executing this command "go test --race"
   
   This was my first ever project in Golang. I tried my best to follow all the best practises. In case If i am missing somethings I would love to know about them.
   
